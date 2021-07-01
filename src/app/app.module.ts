@@ -6,6 +6,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent }   from './app.component';
 
+//pipes
+import { FilterPipe } from './pipes/filter.pipe';
+
 import { AutoCompleteModule } from 'primeng/autocomplete';
 
 @NgModule({
@@ -16,7 +19,7 @@ import { AutoCompleteModule } from 'primeng/autocomplete';
     FormsModule,
     HttpClientModule
   ],
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, FilterPipe ],
   bootstrap:    [ AppComponent ]
 })
 
